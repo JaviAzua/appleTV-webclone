@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .menuItem {
+    @apply tracking-wider flex items-center h-11 font-[200] text-white/80 hover:text-white transition duration-200;
+  }
+}
+
 @font-face {
   font-family: "SF Display";
   src: url("./fonts/SFDisplay-Bold.woff2") format("woff2"),

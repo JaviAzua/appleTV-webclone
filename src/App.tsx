@@ -10,7 +10,7 @@ function App() {
       <main>
         <div className="h-[300vh]">
           <Container>
-            Hero component <Button size="large">Test Button</Button>
+            Hero component <Button size="large">Large Button</Button>
           </Container>
         </div>
         <div>
