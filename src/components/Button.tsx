@@ -6,7 +6,7 @@ type Props = {
   className?: string;
 };
 
-export const Button = ({ children, size = "medium" }: Props) => {
+export const Button = ({ children, size = "medium", className }: Props) => {
   const sizeClassNames = {
     small: "text-xs px-2 py-1",
 
@@ -18,7 +18,8 @@ export const Button = ({ children, size = "medium" }: Props) => {
     <button
       className={twMerge(
         "bg-white text-textBlack rounded-full",
-        sizeClassNames[size]
+        sizeClassNames[size],
+        className
       )}
     >
       {children}

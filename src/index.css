@@ -4,7 +4,15 @@
 
 @layer components {
   .menuItem {
-    @apply tracking-wider flex items-center h-11 font-[200] text-white/80 hover:text-white transition duration-200;
+    @apply tracking-wider flex items-center h-[--header-row-height] font-[200] text-white/80 hover:text-white transition duration-200;
+  }
+}
+
+@layer {
+  :root {
+    --header-row-height: 44px;
+    --header-height: calc(var(--header-row-height) * 2);
+    --hero-height: calc(100svh - var(--header-height));
   }
 }
 

@@ -22,7 +22,7 @@ export const Header = () => {
   return (
     <>
       <header className="bg-backgroundContrast">
-        <Container className="flex items-center justify-between min-h-11">
+        <Container className="flex items-center justify-between min-h-[--header-row-height]">
           <a href="/" className="-ml-6 menuItem px-4">
             <FaApple className="size-6 md:size-5" />
             <span className="sr-only">Back to homepage</span>
@@ -39,18 +39,18 @@ export const Header = () => {
           ))}
           <div className="flex items-center gap-5">
             <a href="/" className="menuItem">
-              <IoMdSearch className="size-6 md:size-4" />
+              <IoMdSearch className="size-6 md:size-5" />
               <span className="sr-only">Search</span>
             </a>
             <a href="/" className="menuItem">
-              <IoBagOutline className="size-6 md:size-4" />
+              <IoBagOutline className="size-6 md:size-5" />
               <span className="sr-only">Cart</span>
             </a>
           </div>
         </Container>
       </header>
-      <div className="sticky top-0 bg-backgroundContrast text-white ">
-        <Container className="flex justify-between items-center min-h-11">
+      <div className="sticky top-0 z-20 bg-backgroundContrast text-white ">
+        <Container className="flex justify-between items-center min-h-[--header-row-height]">
           <p className="text-xl font-semibold">Apple TV+</p>
           <Button size="small">Stream Now</Button>
         </Container>

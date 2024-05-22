@@ -1,6 +1,6 @@
-import { Button } from "./components/Button";
 import { Container } from "./components/Container";
 import { Header } from "./components/Header";
+import { Hero } from "./components/section/Hero";
 import "./index.css";
 
 function App() {
@@ -8,11 +8,7 @@ function App() {
     <>
       <Header />
       <main>
-        <div className="h-[300vh]">
-          <Container>
-            Hero component <Button size="large">Large Button</Button>
-          </Container>
-        </div>
+        <Hero />
         <div>
           <Container>USP</Container>
         </div>
