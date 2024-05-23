@@ -1,6 +1,7 @@
-import { Container } from "./components/Container";
 import { Header } from "./components/Header";
 import { Hero } from "./components/section/Hero";
+import Usps from "./components/section/Usps";
+import VideoCarousel from "./components/section/VideoCarousel";
 import "./index.css";
 
 function App() {
@@ -8,16 +9,11 @@ function App() {
     <>
       <Header />
       <main>
-        <Hero />
-        <div>
-          <Container>USP</Container>
+        <div className="bg-background">
+          <Hero />
+          <Usps />
         </div>
-        <div>
-          <Container>3 cols layout</Container>
-        </div>
-        <div>
-          <Container>Carrousel</Container>
-        </div>
+        <VideoCarousel />
       </main>
     </>
   );

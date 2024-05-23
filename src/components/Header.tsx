@@ -21,8 +21,8 @@ export const Header = () => {
   ];
   return (
     <>
-      <header className="bg-backgroundContrast">
-        <Container className="flex items-center justify-between min-h-[--header-row-height]">
+      <header className="bg-backgroundContrast z-10 relative">
+        <Container className="flex items-center  justify-between min-h-[--header-row-height]">
           <a href="/" className="-ml-6 menuItem px-4">
             <FaApple className="size-6 md:size-5" />
             <span className="sr-only">Back to homepage</span>

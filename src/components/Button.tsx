@@ -17,7 +17,7 @@ export const Button = ({ children, size = "medium", className }: Props) => {
   return (
     <button
       className={twMerge(
-        "bg-white text-textBlack rounded-full",
+        "bg-white text-textBlack rounded-full hover:bg-white/90",
         sizeClassNames[size],
         className
       )}
