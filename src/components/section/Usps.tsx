@@ -37,7 +37,7 @@ function Usps() {
     },
   ];
   return (
-    <Container className="max-w-[692px] z-10 relative py-36 text-whiteText text-4xl font-bold ">
+    <Container className="max-w-[692px] z-10 relative py-36 text-whiteText text-3xl md:text-4xl font-bold ">
       <div className="space-y-12 pb-[150px]">
         <Fadein>
           <p>New Apple Originals every month — always ad‑free.</p>
