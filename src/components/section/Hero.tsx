@@ -37,20 +37,48 @@ export const Hero = () => {
           animate="hidden"
           viewport={{ amount: 1 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-10 text-whiteText">
+          <motion.h1
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            animate={{
+              opacity: [0, 0, 0.3, 1],
+              y: 0,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+            className="text-4xl md:text-5xl font-bold mb-10 text-whiteText"
+          >
             All Apple Originals.
             <br /> Only on Apple TV+.
-          </h1>
-          <Button className="mb-16 font-semibold" size="large">
-            Stream now
-          </Button>
-          <p className="flex gap-1 items-center font-semibold">
-            Watch on the
-            <span>
-              <SiAppletv className="size-10" />
-            </span>
-            app.
-          </p>
+          </motion.h1>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            animate={{
+              opacity: [0, 0, 0.3, 1],
+              y: 0,
+            }}
+            transition={{
+              delay: 0.5,
+              duration: 0.5,
+            }}
+          >
+            <Button className="mb-16 font-semibold" size="large">
+              Stream now
+            </Button>
+            <p className="flex gap-1 items-center font-semibold">
+              Watch on the
+              <span>
+                <SiAppletv className="size-10" />
+              </span>
+              app.
+            </p>
+          </motion.div>
         </motion.div>
       </Container>
     </div>

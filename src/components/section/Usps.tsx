@@ -90,8 +90,8 @@ const PackageCard = ({
         {text}
         <br />
         {linkLabel && (
-          <a className="flex gap-3">
-            <span className="">{linkLabel}</span>
+          <a className="flex gap-3 group cursor-pointer text-blue">
+            <span className="group-hover:underline">{linkLabel}</span>
             <span>{">"}</span>
           </a>
         )}
